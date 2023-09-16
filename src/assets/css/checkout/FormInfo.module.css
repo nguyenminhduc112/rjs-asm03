@@ -1,0 +1,32 @@
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+.lable {
+    color: var(--textSubColor);
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.input {
+    height: 50px !important;
+
+}
+
+.btnSubmit {
+    padding: 15px 40px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: var(--backgroundColorBtn);
+    color: #fff;
+    font-style: italic;
+    transition: all 0.25s;
+}
+
+.btnSubmit:hover {
+    opacity: 0.8;
+}

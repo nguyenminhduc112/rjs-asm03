@@ -7,7 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --textSubColor: #9c9898;
+  --textMainColor: #150c0b;
+  --backgroundColorBtn: #383838;
+}
+
+
+.wrapper {
+  margin-top: 50px !important;
+}
+
+.error {
+  color: rgb(209, 26, 26);
 }
