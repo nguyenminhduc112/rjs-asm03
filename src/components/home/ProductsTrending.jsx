@@ -1,10 +1,9 @@
-import React, { useCallback } from 'react'
+import React, { Suspense, lazy, useCallback } from 'react'
 import classes from '../../assets/css/home/ProductsTrending.module.css'
-
 import ProductItem from '../ProductItem'
-import Popup from '../UI/Popup'
 import { useDispatch } from 'react-redux'
 import { popupAction } from '../../store/reducers/popupReducer'
+const Popup = lazy(() => import('../UI/Popup'))
 const ProductsTrending = ({ products }) => {
     const dispatch = useDispatch()
     // Xử lý hiển thị chi tiết sản sẩm bằng popup
@@ -30,7 +29,7 @@ const ProductsTrending = ({ products }) => {
                     {listProductsRender}
                 </div>
             </div>
-            <Popup />
+            <Suspense fallback={<p>Loading...</p>}> <Popup /></Suspense>
         </React.Fragment>
     )
 }
